@@ -2,6 +2,7 @@ body {
 	background-color: #252525;
 }
 
+/* Navbar Start */
 .navbar {
 	background-color: #191919;
 	width: 100%;
@@ -41,8 +42,10 @@ body {
 	text-align: center;
 }
 
+/* Navbar End */
 
 
+/* Main Text Start */
 #myText {
 	color: white;
 	text-align: center;
@@ -72,7 +75,15 @@ body {
 	transition: opacity 0.5s ease;
 }
 
+#main_quote {
+	text-align: center;
+	margin-top: 5%;
+	font-style: italic;
+}
 
+/* Main Text End */
+
+/* Main Content Start */
 #main_wrapper {
 	background-color: #252525;
 	position: absolute;
@@ -122,4 +133,19 @@ body {
 #img_fade:hover {
 	opacity: 0.8;
 	top: 4px;
+}
+
+/* Main Content End */
+
+#scroll_btn {
+	display: hidden;
+	position: fixed;
+	background-color: #191919;
+	color: white;
+	outline: none;
+	bottom: 10px;
+	right: 10px;
+	height: 60px;
+	width: 60px;
+	border-radius: 360px;
 }
