@@ -1,5 +1,8 @@
 
+
 $(document).ready(function() {
+
+	/*--------------------Main Text Fade In/Out Function-------------------------*/
 	$(window).scroll(function() {    
 	    var scroll = $(window).scrollTop();
 	    $('#myText , #arrow').stop().animate(
@@ -8,28 +11,36 @@ $(document).ready(function() {
 	    );
 	});
 
-	quote();
+	/*-------------------Mobile Menu Toggle---------------------------------------*/
+	$('.menu_container').hover(function() {
+		$('.dropdown_menu , .dropdown_menu a').stop(true , false).slideToggle(400);
+	})
+
+	quote(); //--------------Call Random Quote Function------------------
 
 
-$(window).scroll(function(){
-		if ($(this).scrollTop() > 400) {
-			$('#scroll_btn').fadeIn();
-		} else {
-			$('#scroll_btn').fadeOut();
-		}
+
+	/*---------------------Scroll To Top Button Function--------------------------*/
+	$('#scroll_btn').hide();
+
+	$(window).scroll(function(){
+			if ($(this).scrollTop() > 400) {
+				$('#scroll_btn').fadeIn();
+			} else {
+				$('#scroll_btn').fadeOut();
+			}
+		});
+		
+		$('#scroll_btn').click(function(){
+			$('html , body').animate({scrollTop : 0},800);
+			return false;
+		});
+
 	});
-	
-	//Click event to scroll to top
-	$('#scroll_btn').click(function(){
-		$('html , body').animate({scrollTop : 0},800);
-		return false;
-	});
+	/*-------------------Main Function ends Here------------------------------------*/
 
-});
-
-
-
-function quote() {
+	/*-------------------Function To Randomly Change Quotes on refresh------------------------*/
+	function quote() {
 
 	var random_num = Math.floor(Math.random(1) * 5);
 

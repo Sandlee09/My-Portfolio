@@ -12,27 +12,35 @@
 
 	
 <body>
-	<section class="col-sm-12 navbar">
+	<section class="col-xs-12 navbar">
 
-	<div class="navbar_right col-sm-3">
-		<ul style="list-style: none; display: inline; margin-top: 20px;">
-			<a href="main page.html" style="text-decoration: none"><li style="float: left; padding: 5px; color: #4286f4;"><h4 id="menu_text">Work</h4></li></a>
-			<a href="main page.html" style="text-decoration: none"><li style="float: left; padding: 5px; color: white;"><h4 id="menu_text">About/Contact</h4></li></a>
+
+	<div class="navbar_left col-xs-3">
+		<div class="menu_container">
+			<img src="images/menu_icon.png" class="menu_icon image-responsive" />
+			<div class="dropdown_menu">
+	    		<a href="main page - english.html" style="color: #4286f4;">Work</a>
+	    		<a href="main page - english.html">Profile/Contact</a>
+  			</div>
+  		</div>	
+		<ul style="list-style: none;">
+			<a href="main page - spanish.html" style="text-decoration: none"><li style="float: left; padding: 5px; color: #4286f4;"><h4 id="menu_text">Work</h4></li></a>
+			<a href="main page - spanish.html" style="text-decoration: none"><li style="float: left; padding: 5px; color: white;"><h4 id="menu_text">Profile/Contact</h4></li></a>
 		</ul>
 	</div>
-		
-		<div class="col-sm-6 nav_name"><h1>Gabriel Perez</h1></div>
-		<div class="col-sm-3 nav_right">
+		<div class="col-xs-3 nav_right">
 			<a href="https://www.facebook.com/gabriel.k.perez?ref=bookmarks" alt="Facebook"><img src="images/fb_logo.png" style="height: 20px; width: 20px; margin-right: 10px;" /></a>
 			<a href="https://www.linkedin.com/in/gabriel-perez-34b943136/" alt="LinkedIn"><img src="images/linkedin_logo.png" style="height: 50px; width: 50px;" /></a>
 		</div>
+		<div class="col-xs-6 nav_name"><h1>Gabriel Perez</h1></div>
+		
 	</section>
 
 	
 		<div class="col-sm-6" id="myText">
 			<h1 style="padding-top: 20px;">Gabriel Perez</h1>
-			<h4>Web Developer & Student at UTN Bueno Aires, Argentina</h4>
-			<h5>scroll down to see portfolio</h5>
+			<h4>Front End Web Developer & Student at the UTN in Buenos Aires, Argentina</h4>
+			<h5>Scroll Down to see my Work</h5>
 
 			<h1 id="main_quote"><i></i></h1>
 		</div>
@@ -48,17 +56,18 @@
 			<div class="col-sm-8" id="container_1">
 				<figure class="col-sm-5" id="website_1">
 					<a href="https://sandlee09.github.io/El_Pial2/"><img src="images/el_pial.png" class="image-responsive" id="img_fade" style="position: relative; height: auto; width: auto;" /></a>
-					<div style="background-color: #191919;"><h2 style="color: white; font-family: nyty; margin-top: 0px; padding-top: 30px; padding-bottom: 30px;">"El Pial de Zelaya"</h2></div>
+					<div style="background-color: #191919;" id="website1_name"><h2 style="color: white; font-family: nyty; margin-top: 0px; padding-top: 30px; padding-bottom: 30px;">"El Pial de Zelaya"</h2></div>
 				</figure>
+				
 				<figure class="col-sm-5"  id="website_2">
 					<img src="images/project 2.png" class="image-responsive" id="img_fade" style="position: relative; height: auto; width: auto;" />
-					<div style="background-color: #191919;"><h2 style="color: white; font-family: nyty; margin-top: 0px; padding-top: 30px; padding-bottom: 30px;">"Project 2"</h2></div>
+					<div style="background-color: #191919;" id="website2_name"><h2 style="color: white; font-family: nyty; margin-top: 0px; padding-top: 30px; padding-bottom: 30px;">"Coming Soon"</h2></div>
 				</figure>
 			</div>
 			
 		</section>
 
-		<button id="scroll_btn" >Scroll Top</button>
+		<button id="scroll_btn" >Back to Top</button>
 </body>
 
 </html>
